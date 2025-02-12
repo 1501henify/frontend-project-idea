@@ -16,13 +16,15 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto !important;
 }
 
 body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
   font-family: system-ui, Roboto, Oxygen, sans-serif;
   font-size: 1.15rem;
-  overflow-x: hidden;
   color: var(--dark-color);
 }
 
