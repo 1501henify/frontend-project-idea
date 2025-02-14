@@ -8,10 +8,17 @@
   --gradient-color: linear-gradient(75deg, #0478ed, #1c3fa8);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  html,
   body {
-    background: var(--light-color) 0.8;
+    scroll-behavior: auto !important;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
   }
+
   /* Phlox Home Page */
   .contact li {
     display: none;
@@ -97,27 +104,25 @@
 
   .display-text {
     position: relative;
-    left: 22px;
     top: -749px;
     display: block;
     text-align: center;
     height: 630px;
-    width: 445.33px;
-    padding-top: 49px;
+    width: 443.33px;
+    padding-top: 36px;
     padding-bottom: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .short-underline {
-    padding: 0;
-    padding-left: 20px;
-    margin-bottom: 0;
+    max-width: 100%;
     width: 100%;
-    font-size: 35px;
-    font-weight: 400;
+    display: block;
     text-align: center;
-    text-indent: 0;
+    padding-right: 21px;
+    font-size: 3px;
+    font-weight: 400;
   }
 
   .short-underline::after {
@@ -131,16 +136,18 @@
     line-height: 30px;
     transform: translateY(-21%);
     margin: 0;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 31px;
   }
 
   .btn-light {
-    transform: translateY(-63%);
+    transform: translate(-6%, -60%);
   }
 
   .malt .centered-div {
     position: relative;
     top: -560px;
+    left: -5px;
   }
 
   .grid-container {
@@ -171,7 +178,14 @@
     top: -710px;
   }
 
+  .mold .centered-div .long-underline,
+  .mold .centered-div .long-underline strong {
+    font-size: 34px;
+  }
+
   .text-content {
+    position: relative;
+    right: 28px;
     text-align: left;
     width: 100%;
     padding-left: 49px;
@@ -205,16 +219,17 @@
   }
 
   .text-left {
-    width: 406.33px;
     position: relative;
     top: 330px;
+    right: 20px;
+    width: 406.33px;
     text-align: center;
   }
 
   .text-left h1 {
     font-size: 31px;
     text-align: center;
-    width: 25ch;
+    width: 24ch;
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -224,17 +239,18 @@
   }
 
   .text-left p {
-    width: 45ch;
+    width: 42ch;
     text-align: center;
     padding-left: 21px;
   }
 
   .right-image-container img {
+    background-position: center;
+    background-size: cover;
     position: relative;
     top: -921px;
     display: block;
     text-align: center;
-    object-fit: cover;
   }
 
   /* pricing section */
@@ -266,20 +282,38 @@
   }
 
   .a-r {
+    position: relative;
+    right: 23px;
     margin-bottom: 47px;
+  }
+
+  .a-r:first-child img {
+    position: absolute;
+    left: 157px;
+    width: 65%;
   }
 
   .a-r:nth-child(2) img {
     position: absolute;
-    right: 17px;
+    left: 157px;
+    width: 65%;
   }
 
   .nom-text p {
     text-align: left;
-    width: 50ch;
+    width: 41ch;
   }
 
   /* Recent news */
+  .recent .centered-div {
+    position: relative;
+    left: -5px;
+  }
+  .recent .centered-div .long-text {
+    font-size: 16px;
+    width: 44ch;
+  }
+
   .recent .blog {
     margin: 0 26px;
   }
@@ -316,7 +350,7 @@
     line-height: 42px;
     text-align: center;
     text-indent: 0;
-    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .credit h1::after {
@@ -325,6 +359,7 @@
 
   .credit-text {
     display: block;
+    padding-right: 16px;
   }
 
   .credit-text p {
@@ -340,25 +375,27 @@
   }
 
   .dude img {
+    object-fit: cover;
     height: 359.104px;
     width: 100%;
     vertical-align: middle;
   }
 
   .dude ul {
-    font-size: 19px;
+    width: 100%;
+    transform: translateX(-15px);
+    font-size: 17px;
     font-weight: 500;
-    text-align: justify;
+    text-align: left;
   }
 
   .dude li:last-child {
     text-align: left;
-    /* text-align-last: inherit; learn how to indent*/
   }
 
   .mode {
     position: relative;
-    top: 513px;
+    top: 448px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 50px 0px;
     margin-right: 29px;
     display: block;
@@ -373,7 +410,14 @@
 
   .fine {
     position: relative;
-    right: 40px;
+    right: 43px;
+    margin-bottom: 21px;
+  }
+
+  .fine h1 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -15px;
   }
 
   /* Bend  Section*/
@@ -390,7 +434,7 @@
   .aux {
     position: relative;
     bottom: -310px;
-    left: -15px;
+    left: -33px;
   }
 
   .aux h2 {
@@ -424,9 +468,10 @@
   }
 
   .aux-img img {
+    object-fit: cover;
     position: absolute;
     top: -156px;
-    left: -70px;
+    left: -90px;
     width: 100%;
   }
 
@@ -435,7 +480,7 @@
     position: relative;
     display: block;
     top: 912px;
-    left: -25px;
+    left: -41px;
     width: 100%;
     text-align: center;
   }
@@ -453,14 +498,18 @@
   }
 
   /* Smile section */
-  .mope .long-underline {
+  .mope .centered-div {
     position: relative;
     top: -35px;
+    left: -33px;
   }
+
   .smile {
+    display: block;
+    position: relative;
+    left: -30px;
     margin: 0 10px;
     font-size: 15px;
-    display: block;
   }
 
   .make h4,
@@ -509,8 +558,7 @@
   }
   .serve-grid {
     margin-top: 21px;
-    margin-left: 0;
-    margin-right: 15px;
+    margin-right: 27px;
     width: 463.333px;
     height: 891px;
     display: block;
@@ -535,6 +583,8 @@
   }
 
   .deal {
+    position: relative;
+    left: -6px;
     width: 100%;
     margin: 230px 0px 467px;
     padding: 0px 25px;
@@ -542,10 +592,12 @@
   }
 
   .deal img {
+    object-fit: cover;
     margin-bottom: 129px;
     height: 359.104px;
     width: 100%;
     vertical-align: middle;
+    margin-right: 21px;
   }
 
   .dealer {
@@ -560,21 +612,25 @@
     text-align: center;
     font-size: 35px;
     font-weight: 400;
-    width: 340px;
+    width: 17ch;
+    padding-right: 49px;
   }
 
   .dealer p {
     text-align: center;
     font-size: 16px;
-    width: 340px;
+    width: 36ch;
+    padding-right: 15px;
   }
 
   .ads {
-    margin-left: 27px;
+    margin: 11px;
     display: block;
   }
 
-  .centered-div {
+  .amo {
+    position: relative;
+    top: 36px;
     font-size: 16px;
     font-weight: 400;
   }
@@ -593,7 +649,7 @@
   .grads p:first-child {
     position: relative;
     margin-top: 22px;
-    left: 132px;
+    left: 121px;
   }
 
   .grads p {
@@ -646,7 +702,7 @@
 
   /* Contact Page */
   .contacts {
-    margin: 43px 15px;
+    margin: 43px 10px;
     max-width: 700px;
     height: 2098px;
     display: grid;
@@ -655,7 +711,8 @@
 
   .contact-val {
     position: relative;
-    bottom: -891px;
+    bottom: -921px;
+    left: -21px;
     width: 450px;
   }
 
@@ -676,25 +733,37 @@
   }
 
   .valid {
-    width: 700px;
-    margin-top: 0;
-    margin-right: 21px;
+    max-width: 450px;
+    width: 100%;
+    margin: 21px;
   }
 
   .valid input[type='text'] {
     width: 20ch;
-    font-size: 18px;
+    font-size: 16px;
     cursor: text;
   }
 
   .valid textarea {
-    width: 52ch;
+    width: 45ch;
     font-size: 16px;
   }
 
   .valid .form-btn {
-    width: 21%;
-    text-align: left;
+    width: 34%;
+    text-align: center;
+  }
+
+  .valid input[type='text']:focus + label {
+    top: -10px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .sms textarea:focus + label {
+    top: -10px;
+    font-size: 13px;
+    font-weight: 400;
   }
 
   .map-mode {
@@ -737,7 +806,12 @@
 
   /* Projects Page */
   .project-section {
-    margin: 45px 54px;
+    margin: 45px 5px;
+  }
+
+  .project-val {
+    position: relative;
+    left: -5px;
   }
 
   .project-val h4,

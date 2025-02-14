@@ -1,3 +1,10 @@
+//Screen Adjust
+window.addEventListener('resize', function () {
+  this.setTimeout(function () {
+    map.invalidateSize();
+  }, 200);
+});
+
 // Coordinates for Anambra State, Nigeria
 const onitshaLat = 6.1524;
 const onitshaLon = 6.8257;

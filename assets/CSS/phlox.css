@@ -15,14 +15,15 @@
   padding: 0;
 }
 
-html {
+html,
+body {
   scroll-behavior: auto !important;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
 }
 
 body {
-  overflow-x: hidden;
-  position: relative;
-  width: 100%;
   font-family: system-ui, Roboto, Oxygen, sans-serif;
   font-size: 1.15rem;
   color: var(--dark-color);
@@ -35,6 +36,8 @@ body {
 }
 
 .contact {
+  max-width: 100%;
+  width: 100%;
   background: #005bea;
   color: var(--light-color);
   font-weight: 500;
@@ -70,6 +73,8 @@ body {
 
 /* NAVIGATION */
 .navigation {
+  max-width: 100%;
+  width: 100%;
   background-color: #fff;
   padding: 12px 30px;
   display: flex;
@@ -148,12 +153,15 @@ body {
 
 /* DISPLAY */
 .display {
+  max-width: 100%;
+  width: 100%;
   position: relative;
   display: inline-block;
   margin-bottom: 55px;
 }
 
 .person {
+  max-width: 100%;
   width: 100%;
   display: block;
 }
@@ -270,6 +278,8 @@ body {
 
 /* SECTION */
 .grid-container {
+  max-width: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -317,12 +327,13 @@ body {
 
 /* New Section Styles */
 .side-by-side {
+  max-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 50px auto 0 auto;
   padding-left: 20px;
-  width: 100%;
 }
 
 .large-image img {
@@ -349,11 +360,12 @@ body {
 }
 
 .right-image {
+  max-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 200px auto;
-  width: 100%;
 }
 
 .text-left {
@@ -393,6 +405,8 @@ body {
 /* PRICING PLAN */
 .pricing-plan {
   background: var(--light-color);
+  max-width: 100%;
+  width: 100%;
   margin-bottom: 53px;
   align-items: center;
 }
@@ -510,7 +524,11 @@ body {
 
 /* LISTEN */
 .listen {
-  max-width: 1600px;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 113px;
 }
 
@@ -523,6 +541,7 @@ body {
 }
 
 .a-r {
+  max-width: 100%;
   width: 100%;
 }
 
@@ -618,10 +637,11 @@ body {
 
 /* FOOTER */
 footer {
+  background: var(--footer-color);
+  max-width: 100%;
+  width: 100%;
   margin-top: 100px;
   padding-top: 73px;
-  background: var(--footer-color);
-  max-width: 1500px;
   min-height: 100vh;
   color: rgb(132, 132, 132);
   font-size: 16px;
