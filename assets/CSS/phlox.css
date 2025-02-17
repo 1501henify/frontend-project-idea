@@ -125,32 +125,6 @@ body {
   z-index: 1000;
 }
 
-.menu-container span {
-  background: var(--dark-color);
-  display: block;
-  width: 24px;
-  height: 2px;
-  margin: 5px 0;
-  transition: all ease-in-out 0.4s;
-}
-
-.menu-container.open span:nth-child(2) {
-  width: 0;
-  opacity: 0;
-}
-
-.menu-container.open span:nth-child(3) {
-  transform: rotate(45deg);
-  top: -7px;
-  position: relative;
-}
-
-.menu-container.open span:first-child {
-  transform: rotate(-45deg);
-  top: 7px;
-  position: relative;
-}
-
 /* DISPLAY */
 .display {
   max-width: 100%;
@@ -436,6 +410,16 @@ body {
   color: var(--light-color);
 }
 
+.pricing-plan .grid-container .purchase .light-background a {
+  text-decoration: none;
+  position: absolute;
+  bottom: 11px;
+  left: -33px;
+  width: 100%;
+  text-align: center;
+  color: var(--dark-color);
+}
+
 .light-background {
   position: absolute;
   bottom: -60px;
@@ -445,7 +429,7 @@ body {
   background: #fff;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.14);
   z-index: 0;
-  transition: 0.15s ease-in-out;
+  transition: 0.43s ease;
 }
 
 .purchase ul {
@@ -460,15 +444,14 @@ body {
 .purchase h1 {
   font-size: 97px;
   margin: 0;
-  transition: all 0.65s ease;
+  transition: 0.43s ease;
 }
 
 .first-h2 {
-  margin: 10px 0;
+  margin: 5px 0;
   position: relative;
-  padding-bottom: 40px;
-  padding-left: 10px;
-  align-items: flex-start;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .first-h2::after {
@@ -479,16 +462,16 @@ body {
   background: var(--light-color);
   position: absolute;
   bottom: 0;
-  left: 10px;
+  left: 1.3px;
 }
 
-.purchase-end {
+.purchase .designing .first-h2::after {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: var(--dark-color);
-  transform: translateX(-60px);
+  left: 3.11rem;
+}
+.purchase .development .first-h2::after {
+  position: absolute;
+  left: 4.36rem;
 }
 
 .purchase .designing,
@@ -509,17 +492,14 @@ body {
   margin: 20px;
 }
 
-.purchase .light-background:hover,
-.purchase:hover {
+.pricing-plan .grid-container .purchase:hover .light-background {
   background: var(--gradient-color);
-  transition: all 0.15s ease;
 }
 
 .purchase:hover h1 {
   background: var(--gradient-color);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.65s ease;
 }
 
 /* LISTEN */

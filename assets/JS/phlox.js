@@ -1,30 +1,17 @@
-//IS A TOUCH SCREEN DETECTOR
-const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
+//BACK TO UP BUTTON
 const backToTopButton = document.getElementById('backToTop');
 
-if (isTouchDevice) {
-  const hover_ableElements = document.querySelectorAll('*:hover');
+backToTopButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  smoothScrollToTop();
+});
 
-  hover_ableElements.forEach((element) => {
-    element.addEventListener('click', () => {
-      element.classList.toggle('hover');
-    });
-  });
-}
-
-//SCROLL UP BUTTON
 window.addEventListener('scroll', () => {
   if (window.scrollY > 300) {
     backToTopButton.classList.add('show');
   } else {
     backToTopButton.classList.remove('show');
   }
-});
-
-backToTopButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  smoothScrollToTop();
 });
 
 function smoothScrollToTop() {
@@ -52,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       element.textContent = hasPlus
         ? `+${start.toLocaleString()}`
-        : start.toLocaleString(); //
+        : start.toLocaleString();
     }, 16);
   }
 
@@ -84,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// MENU BUTTON
 const menuContainer = document.getElementById('menu-container');
 const navigation = document.querySelector('.navigation');
 
