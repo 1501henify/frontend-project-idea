@@ -8,252 +8,7 @@
   --gradient-color: linear-gradient(75deg, #0478ed, #1c3fa8);
 }
 
-@media (max-width: 360px) /*Smaller sized mobile screens*/ {
-  html,
-  body {
-    scroll-behavior: auto !important;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden !important;
-    margin: 0;
-    padding: 0;
-  }
-
-  .body {
-    margin: 10px;
-  }
-  /*Display-text*/
-  .display-text .short-underline {
-    position: relative;
-    left: -5px;
-    display: block;
-    width: 14.6ch;
-  }
-
-  .display-text p:nth-child(2) {
-    position: relative;
-    right: -5px;
-    text-align: center;
-    width: 41ch;
-  }
-
-  .display-text .btn-light {
-    position: relative;
-    left: -30px;
-  }
-
-  /*Section*/
-  .malt .centered-div .long-underline,
-  .mold .centered-div .long-underline {
-    position: relative;
-    top: -21px;
-  }
-
-  .malt .centered-div .long-text,
-  .mold .centered-div .long-text {
-    position: relative;
-    left: -7px;
-    text-align: center;
-    width: 38ch;
-  }
-
-  .mold .centered-div .long-text {
-    position: relative;
-    left: -14.65px;
-  }
-
-  /*text content*/
-  .mold .text-content .tee {
-    text-align: left;
-    width: 33ch;
-  }
-
-  /*Right image text*/
-  .right-image .text-left {
-    position: relative;
-    left: -33px;
-  }
-  .right-image .text-left h1 {
-    text-align: center;
-    width: 20ch;
-  }
-
-  .right-image .text-left p {
-    text-align: center;
-    width: 40ch;
-  }
-
-  /*Pricing*/
-  .pricing-plan .grid-container .purchase {
-    position: relative;
-    left: -11px;
-  }
-
-  /*Listen*/
-  .listen .a-r .nom-text p {
-    text-align: left;
-    width: 37.65ch;
-  }
-
-  /*REceNt*/
-  .recent .blog {
-    margin: 0;
-    padding: 0;
-  }
-
-  /*About Page*/
-  .high .credit-text p {
-    text-align: justify;
-  }
-
-  .dude ul {
-    padding-right: 21px;
-    text-align: left;
-    display: block;
-  }
-
-  .dude li {
-    font-size: 16px;
-    font-weight: normal;
-    width: 41ch;
-  }
-
-  .dude .last-word {
-    float: right;
-    transform: translateX(-15.3rem);
-  }
-
-  .mode .fine {
-    position: relative;
-    right: -5px;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 33px;
-  }
-
-  .mode .fine:nth-child(2) h1,
-  .mode .fine:nth-child(3) h1 {
-    transform: translateX(-5px);
-  }
-
-  .bend .aux-img img {
-    position: absolute;
-    top: -66px;
-    width: 95%;
-    padding-left: 41px;
-  }
-
-  .bend .aux-mode {
-    width: 90%;
-    margin-left: 17px;
-    padding-right: -11px;
-  }
-
-  .mope .centered-div .long-underline {
-    margin-bottom: 38px;
-  }
-
-  .mope .centered-div .long-underline::after {
-    margin-top: 0;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .serve .deal .dealer {
-    position: absolute;
-    right: 18px;
-    width: 90%;
-  }
-
-  .serve .deal .serve-text p,
-  .serve .deal .serve-text h4 {
-    transform: translateX(-21px);
-  }
-
-  .amo .long-underline {
-    position: relative;
-    top: 15px;
-  }
-
-  .amo .long-underline::after {
-    position: absolute;
-    bottom: 0;
-  }
-
-  .ads .grads {
-    position: relative;
-    right: -7.43px;
-    width: 90%;
-  }
-
-  .ads .grads p:first-child {
-    position: relative;
-    left: 5.56rem;
-    margin: 0;
-  }
-
-  .blog .blog-item .blog-text {
-    position: absolute;
-    top: 11rem;
-    width: 87%;
-    height: fit-content;
-  }
-
-  .blog .blog-item .blog-text .blog-read {
-    font-size: 16px;
-    text-align: left;
-    line-height: 2.65rem;
-  }
-
-  /*Contacts Page*/
-  .contacts .contact-val h4 {
-    position: relative;
-    left: -27px;
-  }
-
-  .contacts .contact-val p {
-    position: relative;
-    right: -19px;
-    text-align: center;
-    width: 40ch;
-  }
-
-  .contacts .contact-val .valid input {
-    width: 17.36ch;
-  }
-
-  .contacts .contact-val .valid textarea {
-    width: 39.36ch;
-  }
-
-  .contacts .map-mode .map-aux {
-    width: 74%;
-  }
-
-  .contacts .map-mode .map-aux .bla:first-child {
-    padding-top: 11px;
-  }
-
-  .contacts .map-mode .map-aux .bla p {
-    width: 20ch;
-  }
-
-  /*Projects*/
-  .project-section .project-val p {
-    width: 40ch;
-    padding-left: 16px;
-  }
-
-  .project-section .projects {
-    position: relative;
-    left: 2rem;
-  }
-  .project-section .projects .pro {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) /*Medium sized mobile screens*/ {
+@media screen and (max-width: 500px) /*Medium sized mobile screens*/ {
   html,
   body {
     scroll-behavior: auto !important;
@@ -1146,5 +901,250 @@
     position: fixed;
     bottom: 51px;
     right: 31px;
+  }
+}
+
+@media screen and (max-width: 385px) /*Smaller sized mobile screens*/ {
+  html,
+  body {
+    scroll-behavior: auto !important;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .body {
+    margin: 10px;
+  }
+  /*Display-text*/
+  .display-text .short-underline {
+    position: relative;
+    left: -5px;
+    display: block;
+    width: 14.6ch;
+  }
+
+  .display-text p:nth-child(2) {
+    position: relative;
+    right: -5px;
+    text-align: center;
+    width: 41ch;
+  }
+
+  .display-text .btn-light {
+    position: relative;
+    left: -30px;
+  }
+
+  /*Section*/
+  .malt .centered-div .long-underline,
+  .mold .centered-div .long-underline {
+    position: relative;
+    top: -21px;
+  }
+
+  .malt .centered-div .long-text,
+  .mold .centered-div .long-text {
+    position: relative;
+    left: -7px;
+    text-align: center;
+    width: 38ch;
+  }
+
+  .mold .centered-div .long-text {
+    position: relative;
+    left: -14.65px;
+  }
+
+  /*text content*/
+  .mold .text-content .tee {
+    text-align: left;
+    width: 33ch;
+  }
+
+  /*Right image text*/
+  .right-image .text-left {
+    position: relative;
+    left: -33px;
+  }
+  .right-image .text-left h1 {
+    text-align: center;
+    width: 20ch;
+  }
+
+  .right-image .text-left p {
+    text-align: center;
+    width: 40ch;
+  }
+
+  /*Pricing*/
+  .pricing-plan .grid-container .purchase {
+    position: relative;
+    left: -11px;
+  }
+
+  /*Listen*/
+  .listen .a-r .nom-text p {
+    text-align: left;
+    width: 37.65ch;
+  }
+
+  /*REceNt*/
+  .recent .blog {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*About Page*/
+  .high .credit-text p {
+    text-align: justify;
+  }
+
+  .dude ul {
+    padding-right: 21px;
+    text-align: left;
+    display: block;
+  }
+
+  .dude li {
+    font-size: 16px;
+    font-weight: normal;
+    width: 41ch;
+  }
+
+  .dude .last-word {
+    float: right;
+    transform: translateX(-15.3rem);
+  }
+
+  .mode .fine {
+    position: relative;
+    right: -5px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 33px;
+  }
+
+  .mode .fine:nth-child(2) h1,
+  .mode .fine:nth-child(3) h1 {
+    transform: translateX(-5px);
+  }
+
+  .bend .aux-img img {
+    position: absolute;
+    top: -66px;
+    width: 95%;
+    padding-left: 41px;
+  }
+
+  .bend .aux-mode {
+    width: 90%;
+    margin-left: 17px;
+    padding-right: -11px;
+  }
+
+  .mope .centered-div .long-underline {
+    margin-bottom: 38px;
+  }
+
+  .mope .centered-div .long-underline::after {
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .serve .deal .dealer {
+    position: absolute;
+    right: 18px;
+    width: 90%;
+  }
+
+  .serve .deal .serve-text p,
+  .serve .deal .serve-text h4 {
+    transform: translateX(-21px);
+  }
+
+  .amo .long-underline {
+    position: relative;
+    top: 15px;
+  }
+
+  .amo .long-underline::after {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .ads .grads {
+    position: relative;
+    right: -7.43px;
+    width: 90%;
+  }
+
+  .ads .grads p:first-child {
+    position: relative;
+    left: 5.56rem;
+    margin: 0;
+  }
+
+  .blog .blog-item .blog-text {
+    position: absolute;
+    top: 11rem;
+    width: 87%;
+    height: fit-content;
+  }
+
+  .blog .blog-item .blog-text .blog-read {
+    font-size: 16px;
+    text-align: left;
+    line-height: 2.65rem;
+  }
+
+  /*Contacts Page*/
+  .contacts .contact-val h4 {
+    position: relative;
+    left: -27px;
+  }
+
+  .contacts .contact-val p {
+    position: relative;
+    right: -19px;
+    text-align: center;
+    width: 40ch;
+  }
+
+  .contacts .contact-val .valid input {
+    width: 17.36ch;
+  }
+
+  .contacts .contact-val .valid textarea {
+    width: 39.36ch;
+  }
+
+  .contacts .map-mode .map-aux {
+    width: 74%;
+  }
+
+  .contacts .map-mode .map-aux .bla:first-child {
+    padding-top: 11px;
+  }
+
+  .contacts .map-mode .map-aux .bla p {
+    width: 20ch;
+  }
+
+  /*Projects*/
+  .project-section .project-val p {
+    width: 40ch;
+    padding-left: 16px;
+  }
+
+  .project-section .projects {
+    position: relative;
+    left: 2rem;
+  }
+  .project-section .projects .pro {
+    width: 80%;
   }
 }
